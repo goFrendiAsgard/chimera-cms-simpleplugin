@@ -62,3 +62,15 @@ Then, you can invoke the following command:
 ```bash
 npm uninstall <plugin-name>
 ```
+
+# What's included on Simple Plugin
+
+* A static page
+  - `migrations/simpleplugin-0.001-static-page.chiml`: Migration file to create a route to the static file 
+  - `views/example.js`: static page's view
+* CCK entities
+  - `migrations/simpleplugin-0.002-cck.chiml`: Migration file to create two CCK structures, `hogu` and `servants`
+  - `migrations/simpleplugin-0.004-noble-phantasm.chiml`: Migration file to fill the `hogu` CCK Entity with several data
+  - `migrations/simpleplugin-0.005-servant.chiml`: Migration file to fill the `servants` CCK Entity with several data
+* Navigation link
+  - `migrations/simpleplugin-0.003-navigation.chiml`: Migration file to modify navigation configuration, so that the static page and the CCK entities will be accessible from the top/left navigation bar.
