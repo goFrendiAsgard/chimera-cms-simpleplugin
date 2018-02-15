@@ -12,9 +12,17 @@ do:
           - key: 'navigation'
           - $push:
               value:
-                caption: 'Simple Page'
-                url: '/simple'
-                groups: ['loggedIn', 'loggedOut']
+                caption: 'Demo'
+                children:
+                  - caption: 'Simple Page'
+                    url: '/simple'
+                    groups: [loggedIn', 'loggedOut']
+                  - caption: 'Noble Phantasm'
+                    url: '/data/hogu'
+                    groups: [loggedIn', 'loggedOut']
+                  - caption: 'Servants'
+                    url: '/data/servants'
+                    groups: [loggedIn', 'loggedOut']
         out: output
         do: '[$.helper.mongoExecute]'
            
@@ -27,6 +35,6 @@ do:
           - key: 'navigation'
           - $pull:
               value:
-                caption: 'Simple Page'
+                caption: 'Demo'
         out: output
         do: '[$.helper.mongoExecute]'
