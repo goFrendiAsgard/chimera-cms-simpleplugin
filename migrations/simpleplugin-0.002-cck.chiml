@@ -9,13 +9,16 @@ vars:
         picture:
           inputTemplate: '<%- cck.input.image %>'
           presentationTemplate: '<%- cck.presentation.image %>'
+          bootstrapColWidth: 2
         name:
           notNull: 1
           unique: 1
+          bootstrapColWidth: 2
         description:
           inputTemplate: '<%- cck.input.textArea %>'
           tabularPresentationTemplate: '<%- cck.presentation.trimmedText %>'
           presentationTemplate: '<%- cck.presentation.text %>'
+          bootstrapColWidth: 6
       selectGroups: ['loggedIn', 'loggedOut']
       insertGroups: ['loggedIn', 'loggedOut']
       updateGroups: ['loggedIn', 'loggedOut']
@@ -27,9 +30,11 @@ vars:
         picture:
           inputTemplate: '<%- cck.input.image %>'
           presentationTemplate: '<%- cck.presentation.image %>'
+          bootstrapColWidth: 1
         name:
           notNull: 1
           unique: 1
+          bootstrapColWidth: 1
         class:
           inputTemplate: '<%- cck.input.option %>'
           presentationTemplate: '<%- cck.presentation.option %>'
@@ -41,6 +46,7 @@ vars:
             caster: 'Caster'
             assassin: 'Assassin'
           notNull: 1
+          bootstrapColWidth: 1
         mainNoblePhantasm:
           caption: 'Noble Phantasm'
           inputTemplate: '<%- cck.input.many2one %>'
@@ -48,6 +54,7 @@ vars:
           ref: 'hogu'
           keyField: 'name'
           fields: ['picture', 'name', 'description']
+          bootstrapColWidth: 4
           tab: 'main'
         otherNoblePhantasm:
           caption: 'Secondary Noble Phantasm'
@@ -60,10 +67,13 @@ vars:
               ref: 'hogu'
               keyField: 'name'
               fields: ['picture', 'name', 'description']
+              bootstrapColWidth: 4
             story:
               inputTemplate: '<%- cck.input.textArea %>'
               tabularPresentationTemplate: '<%- cck.presentation.trimmedText %>'
               presentationTemplate: '<%- cck.presentation.text %>'
+              bootstrapColWidth: 6
+          bootstrapColWidth: 5
           tab: 'secondary'
       tabs:
         main: '<span class="glyphicon glyphicon-cog"></span> Main'

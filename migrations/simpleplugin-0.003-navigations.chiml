@@ -13,16 +13,17 @@ do:
           - $push:
               value:
                 caption: 'Demo'
+                groups: ['loggedIn', 'loggedOut']
                 children:
                   - caption: 'Simple Page'
                     url: '/simple'
-                    groups: [loggedIn', 'loggedOut']
+                    groups: ['loggedIn', 'loggedOut']
                   - caption: 'Noble Phantasm'
                     url: '/data/hogu'
-                    groups: [loggedIn', 'loggedOut']
+                    groups: ['loggedIn', 'loggedOut']
                   - caption: 'Servants'
                     url: '/data/servants'
-                    groups: [loggedIn', 'loggedOut']
+                    groups: ['loggedIn', 'loggedOut']
         out: output
         do: '[$.helper.mongoExecute]'
            
