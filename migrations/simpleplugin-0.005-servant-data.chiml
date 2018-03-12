@@ -4,7 +4,7 @@ vars:
   data:
 
     - name: Arthuria Pendragon
-      picture: /uploads/1517487760495saber.jpg
+      picture: /simpleplugin/1517487760495saber.jpg
       class: saber
       mainNoblePhantasm: Excalibur
       otherNoblePhantasm:
@@ -13,13 +13,13 @@ vars:
       default: 1
 
     - name: Chuchulain
-      picture: /uploads/1517487885770lancer.jpg
+      picture: /simpleplugin/1517487885770lancer.jpg
       class: lancer
       mainNoblePhantasm: Gaebolg
       default: 1
 
     - name: Shirou Emiya
-      picture: /uploads/1517488023584archer.jpg
+      picture: /simpleplugin/1517488023584archer.jpg
       class: archer
       mainNoblePhantasm: Unlimited blade works
       otherNoblePhantasm:

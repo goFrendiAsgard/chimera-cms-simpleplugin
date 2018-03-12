@@ -76,8 +76,8 @@ vars:
           bootstrapColWidth: 5
           tab: 'secondary'
       tabs:
-        main: '<span class="glyphicon glyphicon-cog"></span> Main'
-        secondary: '<span class="glyphicon glyphicon-cog"></span> Additional'
+        main: '<span class="oi oi-cog"></span> Main'
+        secondary: '<span class="oi oi-cog"></span> Additional'
       selectGroups: ['loggedIn', 'loggedOut']
       insertGroups: ['loggedIn', 'loggedOut']
       updateGroups: ['loggedIn', 'loggedOut']
