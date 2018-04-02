@@ -88,8 +88,8 @@ do:
   - if: action == 'up'
     do:
       # upgrade
-      - '(schemas) -> [$.cck.createSchema]'
+      - |(schemas) -> [$.cck.createSchema]
 
     else:
       # downgrade
-      - '(schemas) -> [$.cck.removeSchema]'
+      - |(schemas) -> [$.cck.removeSchema]
