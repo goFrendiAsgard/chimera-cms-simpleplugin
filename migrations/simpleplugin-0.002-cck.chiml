@@ -64,7 +64,7 @@ vars:
               ref: 'hogu'
               keyField: 'name'
               fields: ['picture', 'name', 'description']
-              bootstrapColWidth: 7
+              bootstrapColWidth: 8
             story:
               inputTemplate: '<%- cck.input.textArea %>'
               tabularPresentationTemplate: '<%- cck.presentation.trimmedText %>'
