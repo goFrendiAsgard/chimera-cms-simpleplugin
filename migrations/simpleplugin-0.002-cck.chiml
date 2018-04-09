@@ -30,11 +30,9 @@ vars:
         picture:
           inputTemplate: '<%- cck.input.image %>'
           presentationTemplate: '<%- cck.presentation.image %>'
-          bootstrapColWidth: 1
         name:
           notNull: 1
           unique: 1
-          bootstrapColWidth: 1
         class:
           inputTemplate: '<%- cck.input.option %>'
           presentationTemplate: '<%- cck.presentation.option %>'
@@ -46,7 +44,6 @@ vars:
             caster: 'Caster'
             assassin: 'Assassin'
           notNull: 1
-          bootstrapColWidth: 1
         mainNoblePhantasm:
           caption: 'Noble Phantasm'
           inputTemplate: '<%- cck.input.many2one %>'
@@ -54,8 +51,8 @@ vars:
           ref: 'hogu'
           keyField: 'name'
           fields: ['picture', 'name', 'description']
-          bootstrapColWidth: 4
           tab: 'main'
+          bootstrapColWidth: 3
         otherNoblePhantasm:
           caption: 'Secondary Noble Phantasm'
           inputTemplate: '<%- cck.input.one2many %>'
@@ -67,13 +64,12 @@ vars:
               ref: 'hogu'
               keyField: 'name'
               fields: ['picture', 'name', 'description']
-              bootstrapColWidth: 4
+              bootstrapColWidth: 7
             story:
               inputTemplate: '<%- cck.input.textArea %>'
               tabularPresentationTemplate: '<%- cck.presentation.trimmedText %>'
               presentationTemplate: '<%- cck.presentation.text %>'
-              bootstrapColWidth: 6
-          bootstrapColWidth: 5
+          bootstrapColWidth: 4
           tab: 'secondary'
       tabs:
         main: '<span class="oi oi-cog"></span> Main'
